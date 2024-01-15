@@ -67,12 +67,12 @@ imagename為該映像檔的名稱\
 若想要將程式在此映像檔環境下執行，則以下方程式碼將程式掛載在此映像檔環境，\
 本project提供[hello.py](./hello.py)測試
 ```
-  docker run -it -v /yourPath/:/app ggaryyy/mypython-app:latest bash
+  docker run -it --rm -v yourPath/:/app ggaryyy/mypython-app:latest bash
 ```
 
 執行後再輸入以下程式碼來執行hello.py
 ```
-  pytho hello.py
+  python hello.py
 ```
 
 # 其他議題
