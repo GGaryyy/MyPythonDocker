@@ -34,7 +34,7 @@
 4. 建立映像檔
 
 ```
-  docker build -t author/imagename
+  docker build -t author/imagename .
 ```
 其中，\
 author為建立映像檔的作者\
@@ -55,7 +55,7 @@ imagename為該映像檔的名稱\
 您也可以在[Docker Hub](https://hub.docker.com/)中下載他人建立好的映像檔。\
 在命令提示字元中輸入以下指令取得此project中的映像檔
 ```
-  docker pull ggaryyy/mypython-app
+  docker pull ggaryyy/mypython-app 
 ```
 
 ### 3. 使用映像檔
