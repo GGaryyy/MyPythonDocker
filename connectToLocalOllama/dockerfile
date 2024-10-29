@@ -1,0 +1,18 @@
+FROM python:3.11
+
+RUN apt-get update && apt-get install -y curl
+
+WORKDIR /app
+
+COPY . /app
+
+# Install any python packages you need
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# Upgrade pip
+RUN python3 -m pip install --upgrade pip
+
+# EXPOSE
+EXPOSE 11434
+
+CMD ["bash"]
