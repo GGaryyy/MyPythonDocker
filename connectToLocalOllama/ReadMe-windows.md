@@ -16,7 +16,7 @@ Reference: [ollama FAQ](https://github.com/ollama/ollama/blob/main/docs/faq.md)
 
 2. use the following docker command to run the image
 
-        docker run -p 11434:11434 --add-host=host.docker.internal:host-gateway -it --rm -v your_folder/:/app ollama-local-test:latest bash
+        docker run -p 11434:11434 --add-host=host.docker.internal:host-gateway -it --rm -v your_folder/:/app ggaryyy/ollama-local-test:latest bash
 
 ## Step3 Test is the connect success or not
 Now you enter the interactive mode.\
