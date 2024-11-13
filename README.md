@@ -13,7 +13,7 @@
 - 接著可以在命令提示字元中輸入以下指令來確認是否安裝，若有輸出Docker版本則代表安裝成功。
 
 ```
-  docker -v
+docker -v
 ```
 
 ### 2. 映像檔
@@ -29,12 +29,12 @@
 
 3. 打開命令提示字元，並透過以下指令切換路徑至Dockerfile及requirements.txt的存放路徑
 ```
-  cd YOUR_FILE_PATH
+cd YOUR_FILE_PATH
 ```
 4. 建立映像檔
 
 ```
-  docker build -t author/imagename .
+docker build -t author/imagename .
 ```
 其中，\
 author為建立映像檔的作者\
@@ -55,24 +55,24 @@ imagename為該映像檔的名稱\
 您也可以在[Docker Hub](https://hub.docker.com/)中下載他人建立好的映像檔。\
 在命令提示字元中輸入以下指令取得此project中的映像檔
 ```
-  docker pull ggaryyy/mypython-app 
+docker pull ggaryyy/mypython-app 
 ```
 
 ### 3. 使用映像檔
 使用以下指令來執行映像檔，以本project的映像檔為例
 ```
-  docker run -it --rm ggaryyy/mypython-app:latest bash
+docker run -it --rm ggaryyy/mypython-app:latest bash
 ```
 
 若想要將程式在此映像檔環境下執行，則以下方程式碼將程式掛載在此映像檔環境，\
 本project提供[hello.py](./hello.py)測試
 ```
-  docker run -it --rm -v yourPath/:/app ggaryyy/mypython-app:latest bash
+docker run -it --rm -v yourPath/:/app ggaryyy/mypython-app:latest bash
 ```
 
 執行後再輸入以下程式碼來執行hello.py
 ```
-  python hello.py
+python hello.py
 ```
 
 # 其他議題
